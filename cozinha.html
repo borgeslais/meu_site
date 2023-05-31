@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lais Borges</title>
+        <link rel="stylesheet" href="./meusite.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="navegação">
+                    <a href= "index.html" title="Página inicial" class="hover-underline-animation"><h1 id="menu">LAIS BORGES</h1></a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="fotografias.html" title="Fotografias" class="hover-underline-animation"><h1>Fotografias</h1></a>
+                            </li>
+                            <li>
+                                <a href="pinturas.html" title="Pinturas" class="hover-underline-animation"><h1>Pinturas</h1></a>
+                            </li>
+                            <li> 
+                            <a href="contato.html" title="Contato" class="hover-underline-animation"><h1>Contato</h1></a>
+                            </li>
+                        </ul> 
+                    </nav>
+                </div>
+            </div>
+        </header>
+            <div class="containeratelie">
+                <div class="galeria">
+                    <a href="#FullImageView"><img src="cozinha1.png" class="imagem_galeria" onclick="FullView(this.src)"></a>
+                    <a href="#FullImageView"><img src="cozinha2.png" class="imagem_galeria" onclick="FullView(this.src)"></a>
+                    <a href="#FullImageView"><img src="cozinha3.png" class="imagem_galeria" onclick="FullView(this.src)"></a>
+                    <a href="#FullImageView"><img src="cozinha4.png" class="imagem_galeria" onclick="FullView(this.src)"></a>
+                    <a href="#FullImageView"><img src="cozinha5.png" class="imagem_galeria" onclick="FullView(this.src)"></a>
+                    <a href="#FullImageView"><img src="cozinha6.png" class="imagem_galeria" onclick="FullView(this.src)"></a>
+                </div>
+            </div>
+            <div id="FullImageView">
+                <img id="FullImage">
+                <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+            </div>
+            <script type="text/javascript">
+                function FullView(ImgLink) {
+                    document.getElementById("FullImage").src = ImgLink;
+                    document.getElementById("FullImageView").style.display = "block";
+
+                }
+                function CloseFullView () {
+                    document.getElementById("FullImageView").style.display = "none";
+                }
+            </script>
+        </div>
+    </body>
+</html>
