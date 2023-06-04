@@ -1,3 +1,6 @@
+
+/***** CONFIG. EM TODAS AS PÁGINAS ******/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -58,13 +61,41 @@ h1 {
     z-index: 100;
 }
 
-
-
 body {
     background-color: #f5f5f2;
     /* background-color: #fff; */
     width: 1280px;
 }
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #8fbc8f;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 96%;
+    transform: scaleX(0);
+    height: 1.6px;
+    bottom: 0;
+    left: 0;
+    background-color: #8fbc8f;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
+/* PÁGINA INICIAL (SOBRE) */
 
 .sobre {
     display: flex;
@@ -116,29 +147,12 @@ img {
     color: black;
 }
 
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #8fbc8f;
-}
 
-.hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 96%;
-    transform: scaleX(0);
-    height: 1.6px;
-    bottom: 0;
-    left: 0;
-    background-color: #8fbc8f;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
 
-.hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
+
+
+
+/* PÁGINA PINTURAS (EM CONSTRUÇÃO NO MOMENTO) */
 
 .avisoconstrução {
     display: flex;
@@ -148,8 +162,6 @@ img {
     min-height: 90vh;
     margin-left: 8%;
     margin-right: 8%;
-    
-
 }
 
 .icone-construção {
@@ -213,6 +225,14 @@ footer a {
     text-align: center; 
 }
 
+
+
+
+
+
+/* PÁGINA CONTATO */
+
+
 .contato {
     margin-left: auto;
     margin-right: 8%;
@@ -221,7 +241,6 @@ footer a {
     min-height: 90vh;
     position: flex;
     width: 50%;
-    
 }
 
 .contato img {
@@ -265,9 +284,18 @@ footer a {
     color: #000000;
 }
 
-.atelie:hover {
-    filter: brightness(70%);
 
+
+
+
+
+
+
+
+/* PÁGINA FOTOGRAFIAS */
+
+.atelie:hover {
+    opacity: 0.6;
 }
 
 .grid-fotografias {
@@ -275,14 +303,81 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 70px;
-    margin-left: 2%
+    margin-left: 2%;
+
 }
 
+/*
+.grid-fotografias a {
+    width: 250px;
+    height: auto;
+}*/
+
 .grid-fotografias img {
-    max-width: 250px;
+    width: 250px;
+    /*
     margin: 10px;
     margin-bottom:40px;
+    */
 }
+
+.ateliehov_ {
+    display: none;
+    width: 290px;
+    margin-top: 15%;
+    margin-left: 60px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    color: black;
+    text-align: left;
+    /*
+    background-color:#cfd8cf;*/
+}
+
+
+.grid-fotografias a:hover+.ateliehov_ {
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 12%;
+}
+
+.ateliehov_ span {
+    position: relative;
+    left: -11px;
+}
+
+
+/*
+.ateliehov_ {
+    background-color:rgba(0,0,0,0.5);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    color:#fff;
+    font-family:sans-serif;
+    opacity:0;
+    transition:opacity 0.3s;
+}
+
+.ateliehov_:hover {
+    opacity:1;
+}
+*/
+
+
+
+
+
+
+/* PÁGINA ATELIE */
 
 .galeria {
     display: flex;
@@ -290,7 +385,6 @@ footer a {
     justify-content: center;
     margin-top: 70px;
     margin-left: 2%;
-
 }
 
 .galeria img {
@@ -303,8 +397,7 @@ footer a {
 
 .galeria img:hover {
     cursor: pointer;
-    filter: brightness(70%);
-    
+    opacity: 0.6;
 }
 
 #FullImageView {
@@ -348,11 +441,6 @@ footer a {
 
 }
 
-.sectionatelie a {
-    text-decoration: none;
-    color: #000000;
-}
-
 #atelietitulo {
     text-align: left;
     padding-left: 3%;
@@ -371,5 +459,10 @@ footer a {
     font-family: 'Poppins', sans-serif;
     text-align: justify;
     font-size: 14px;
+}
+
+#atelieparagrafo a {
+    text-decoration: none;
+    color:  black;
 }
 
