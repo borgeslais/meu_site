@@ -140,6 +140,11 @@ body {
     margin-top: 75px;
 }
 
+.sobre a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .fotoprincipal {
     height: auto;
     padding: 4px;
