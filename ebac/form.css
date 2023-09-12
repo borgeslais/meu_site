@@ -1,0 +1,103 @@
+* {
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.formulario {
+    position: absolute;
+    top: 20%;
+    left: 550px;
+    width: 320px;
+    /* border-style: solid;
+    border-width: 1px; */
+    border:none;
+
+}
+
+.formulario h1, h3 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario h1 {
+    color: rgb(0, 0, 0);
+    height: 100px;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: 1px;
+}
+
+.formulario h3 {
+    /* background-color: rgb(184, 184, 184); */
+    font-size: 15px;
+    height: 20px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.formulario input {
+    height: 30px;
+    /* border: none; */
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    /* border: none; */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+.success-message {
+    background-color: rgb(28, 173, 84);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    display: none;
+    font-family: Helvetica, sans-serif;
+}
+
+.error-message {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(202, 26, 26);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: Helvetica, sans-serif;
+    display: none;
+
+}
+
+input.error {
+    color: rgb(202, 26, 26);
+    border-color: rgb(202, 26, 26);
+    outline-color: rgb(202, 26, 26);
+
+}
